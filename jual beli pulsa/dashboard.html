@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Al-Ma'ruf Cell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Al-Ma'ruf Cell</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="nav-link active" data-target="beranda">Beranda</a></li>
+                <li><a href="#" class="nav-link" data-target="tentang">Tentang Kami</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Produk</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="nav-link" data-target="produk-pulsa">Pulsa</a>
+                        <a href="#" class="nav-link" data-target="produk-data">Pulsa Data</a>
+                        <a href="#" class="nav-link" data-target="produk-token">Token Listrik</a>
+                        <a href="#" class="nav-link" data-target="produk-topup">Top Up</a>
+                    </div>
+                </li>
+                <li><button id="logout-btn" class="logout-button">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-area">
+        <!-- Konten Beranda (Hero Section) -->
+        <section id="beranda" class="page-content active">
+            <h2 id="welcome-title">Halo, <br>Selamat Datang di <span class="highlight">Al-Ma'ruf Cell</span></h2>
+            <p>Pusat terpercaya untuk semua kebutuhan Online Anda. Pilih produk yang Anda inginkan dari menu navigasi di atas. Terimah Kasih</p>
+            <p>TERIMAH KASIH</p>
+        </section>
+
+        <!-- Konten Tentang Kami -->
+        <section id="tentang" class="page-content">
+            <h2>Tentang Kami</h2>
+            <p><strong>Alamat:</strong> Jl. Belambangan Rt.04/Rw.02, Sidoarjo,Jawa Timur</p>
+            <p><strong>No. Telepon/WhatsApp:</strong> 085792698607</p>
+            <p><strong>Email:</strong> kontak@almarufcell.com</p>
+        </section>
+
+        <!-- Konten Produk Pulsa -->
+        <section id="produk-pulsa" class="page-content">
+            <h2>Produk Pulsa</h2>
+            <div class="product-grid" id="pulsa-grid">
+                <!-- Produk dimuat oleh JavaScript -->
+            </div>
+        </section>
+
+        <!-- Konten Produk Data -->
+        <section id="produk-data" class="page-content">
+            <h2>Produk Pulsa Data</h2>
+            <div class="product-grid" id="data-grid">
+                <!-- Produk dimuat oleh JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Konten Produk Token -->
+        <section id="produk-token" class="page-content">
+            <h2>Token Listrik</h2>
+            <div class="product-grid" id="token-grid">
+                <!-- Produk dimuat oleh JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Konten Produk Top Up -->
+        <section id="produk-topup" class="page-content">
+            <h2>Top Up E-Wallet & Game</h2>
+            <div class="product-grid" id="topup-grid">
+                <!-- Produk dimuat oleh JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+
+    
+</body>
+</html>
